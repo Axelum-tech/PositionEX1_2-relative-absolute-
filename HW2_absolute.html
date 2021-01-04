@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Relative Position</title>
+    <style>
+        body{
+            background-color: #222222;
+           
+            
+        }
+        /* .parent{
+            border: orange solid 2px;
+            padding: 10px;
+            display: inline-block  ;
+
+        } */
+        div{ 
+            width: 100px;
+            height: 100px; 
+         } 
+        .child_1{
+            background-color: #555;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 3 ;
+            
+        }
+        .child_2{
+            background-color: #888888;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+           
+            
+        }
+        .child_3{
+            background-color: #bbbbbb;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+ <!-- <div class="parent"> -->
+         <div class="child_1">1</div>
+        <div class="child_2">2</div>
+        <div class="child_3">3</div> 
+    <!-- </div> -->
+    <!-- HW1--- BODY HEIGHT= border height + [1px(aici am observat ca se lasa golul acesta doar cind nu este nici un continut in body)]\
+                             + body height + body children height(default/inserted)  -->
+                                  
+</body>
+</html>
